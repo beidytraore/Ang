@@ -1,0 +1,48 @@
+<mat-card>
+  <h1>Your profile details</h1>
+  {{user | json}}
+<mat-card-content>
+  <div class="bootstrap-wrapper">
+    <div class="container">
+        <div class="container text-center">
+          <img src="https://www.kindpng.com/picc/m/24-248253_user-profile-default-image-png-clipart-png-download.png"
+          alt=""
+          class="profile-image"
+           />
+           <h1 class="mt20">Beydi Traore</h1>
+        </div>
+        <div class="row">
+          <div class="col-md-10 offset-md-1">
+            <!--table details-->
+           <table class="table">
+             <tr>
+               <td>Username</td>
+               <td>beyditraore88@gmail.com</td>
+             </tr>
+             <tr>
+              <td>Userid</td>
+              <td>EXAM012</td>
+            </tr>
+            <tr>
+              <td>phone</td>
+              <td>78451212</td>
+            </tr>
+            <tr>
+              <td>Role</td>
+              <td>ADMIN</td>
+            </tr>
+            <tr>
+              <td>Status</td>
+              <td>ACTIVE</td>
+            </tr>
+           </table>
+          </div>
+        </div>
+      </div>
+    </div>
+    <mat-card-actions class="text-center">
+      <button mat-raised-button color="primary">UPDATE</button>
+      <button mat-button color="accent">SHARE</button>
+    </mat-card-actions>
+</mat-card-content>
+</mat-card>

@@ -8,6 +8,7 @@
   <span>My App</span>
   <span class="example-spacer"></span>
   <button
+  *ngIf="!login.isLoggedIn"
      routerLink="/login"
      mat-icon-button
      class="example-icon favorite-icon"
@@ -16,7 +17,7 @@
   </button>
 
   <a
-  *ngIf="!login.isLoggedIn()"
+  *ngIf="!isLoggedIn"
     routerLink="/register"
     mat-icon-button
     style="margin-right: 50px;"
@@ -26,10 +27,19 @@
 </a>
   <a
    (click)="logout()"
-    *ngIf="login.isLoggedIn()"
+    *ngIf="login.isLoggedIn"
     mat-icon-button
     class="example-icon favorite-icon mr-20 ml20"
     aria-label="Example icon-button with heart icon"
     > Logout
     </a>
+
+    <button
+    *ngIf="login.isLoggedIn"
+    class="example-icon favorite-icon ml20"
+    mat-button
+    aria-label="Example icon-button with heart icon"
+    >
+    <!-- {{ user.username }} -->
+  </button>
 </mat-toolbar>

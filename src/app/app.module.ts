@@ -18,6 +18,11 @@ import { LoginComponent } from './pages/login/login.component';
 import {MatToolbarModule} from '@angular/material/toolbar';
 import {MatIconModule} from '@angular/material/icon';
 import { authInterceptorProviders } from './services/auth.interceptor';
+import { ProfileComponent } from './pages/profile/profile.component';
+import {MatListModule} from '@angular/material/list';
+import { SidebarComponent } from './pages/dashboards/sidebar/sidebar.component';
+import { DashboardComponent } from './pages/dashboards/dashboard/dashboard.component';
+import { WelcomeComponent } from './pages/welcome/welcome.component';
 
 
 @NgModule({
@@ -26,7 +31,11 @@ import { authInterceptorProviders } from './services/auth.interceptor';
     RegisterComponent,
     HomeComponent,
     NavbarComponent,
-    LoginComponent
+    LoginComponent,
+    ProfileComponent,
+    SidebarComponent,
+    DashboardComponent,
+    WelcomeComponent
   ],
   imports: [
     BrowserModule,
@@ -40,7 +49,8 @@ import { authInterceptorProviders } from './services/auth.interceptor';
     MatFormFieldModule,
     MatCardModule,
     MatToolbarModule,
-    MatIconModule
+    MatIconModule,
+    MatListModule
 
 
   ],
